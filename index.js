@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send(cityData);
+  res.status(200).send("Homepage");
 });
 
 app.use("/api/auth", UserRoute);
